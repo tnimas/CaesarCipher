@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfLanguageModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <LanguageModel>
+    <Shortname>EN</Shortname>
+    <Alphabet>abcdefghijklmnopqrstuvwxyz</Alphabet>
+    <AffFilename>en_US.aff</AffFilename>
+    <DicFilename>en_US.dic</DicFilename>
+  </LanguageModel>
+  <LanguageModel>
+    <Shortname>RU</Shortname>
+    <Alphabet>абвгдеёжзийклмнопрстуфхцчшщъыьэюя</Alphabet>
+    <AffFilename>ru_RU.aff</AffFilename>
+    <DicFilename>ru_RU.dic</DicFilename>
+  </LanguageModel>
+</ArrayOfLanguageModel>

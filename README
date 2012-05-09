@@ -1,0 +1,46 @@
+The program is written in the course of the Yaroslavl State Technical University basics of information security.
+
+To run the program requires MS Windows with .net framework 4.0
+To open the source code you can use  Visual Studio 2010 or later.
+
+To use:
+Create input.txt in the directory with the application.
+Enter "encrypt_<Count Shift>" in the first row and any proposal to the English (or other language, see will down) in the second.
+Run the application, resulting in the file output.txt will be shifted to line symbols in accordance with the Caesar cipher.
+Copy the line in output.txt and paste it instead of the previous one in input.txt.
+Replace "encrypt_ .." to "decrypt". Run the application again.
+As a result, output.txt will be the source string (lowercase words and spaces)
+Example:
+
+write in input.txt:
+"
+encrypt_42
+In cryptography, a Caesar cipher, also known as a Caesar's cipher, the shift cipher, Caesar's code or Caesar shift, is one of the simplest and most widely known encryption techniques.
+"
+
+run -> content output.txt: 
+"yd shofjewhqfxo q squiqh syfxuh qbie ademd qi q squiqhi syfxuh jxu ixyvj syfxuh squiqhi setu eh squiqh ixyvj yi edu ev jxu iycfbuij qdt ceij mytubo ademd udshofjyed jusxdygkui" 
+
+write in input.txt:
+"
+decode
+yd shofjewhqfxo q squiqh syfxuh qbie ademd qi q squiqhi syfxuh jxu ixyvj syfxuh squiqhi setu eh squiqh ixyvj yi edu ev jxu iycfbuij qdt ceij mytubo ademd udshofjyed jusxdygkui
+"
+
+run -> content output.txt: 
+"in cryptography a caesar cipher also known as a caesars cipher the shift cipher caesars code or caesar shift is one of the simplest and most widely known encryption techniques"
+
+To work in a different language, use encrypt_<shift value> <two-letter abbreviation of language> and decrypt <two-letter abbreviation of language>, respectively.
+Example: "encrypt_3 ru" 
+You can also set the default language in appname.exe.config file. For this to work in the file you want to create a section langconfig.xml <LanguageModel> and fill it. 
+Example of section:
+
+  <LanguageModel>
+    <Shortname>EN</Shortname>
+    <Alphabet>abcdefghijklmnopqrstuvwxyz</Alphabet>
+    <AffFilename>en_US.aff</AffFilename>
+    <DicFilename>en_US.dic</DicFilename>
+  </LanguageModel>
+Files en_US.aff, en_US.dic - standard dictionaries Hunspell
+
+You can contact me by sending an email to the box tnimas@gmail.com
